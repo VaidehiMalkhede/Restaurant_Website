@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Payment Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+ <body> 
+  <div class="container"> 
+   <form id="payment-form" action="#"> 
+    <div class="row"> 
+     <div class="col"> 
+      <h3 class="title">Billing Address</h3> 
+      <div class="inputBox"> <label for="name">Full Name:</label> 
+       <input type="text" id="name" placeholder="Enter your full name" required> 
+      </div> 
+      <div class="inputBox"> <label for="email"> Email: </label> 
+       <input type="email" id="email" placeholder="Enter email address" required> 
+      </div> 
+      <div class="inputBox"> <label for="address"> Address: </label> 
+       <input type="text" id="address" placeholder="Enter address" required> 
+      </div> 
+      <div class="inputBox"> <label for="state"> State: </label> <select id="state" required> <option value="">Select state</option> <option value="Andhra Pradesh">Andhra Pradesh</option> <option value="Arunachal Pradesh">Arunachal Pradesh</option> <option value="Assam">Assam</option> <option value="Bihar">Bihar</option> <option value="Chhattisgarh">Chhattisgarh</option> <option value="Goa">Goa</option> <option value="Gujarat">Gujarat</option> <option value="Haryana">Haryana</option> <option value="Himachal Pradesh">Himachal Pradesh</option> <option value="Jharkhand">Jharkhand</option> <option value="Karnataka">Karnataka</option> <option value="Kerala">Kerala</option> <option value="Madhya Pradesh">Madhya Pradesh</option> <option value="Maharashtra">Maharashtra</option> <option value="Manipur">Manipur</option> <option value="Meghalaya">Meghalaya</option> <option value="Mizoram">Mizoram</option> <option value="Nagaland">Nagaland</option> <option value="Odisha">Odisha</option> <option value="Punjab">Punjab</option> <option value="Rajasthan">Rajasthan</option> <option value="Sikkim">Sikkim</option> <option value="Tamil Nadu">Tamil Nadu</option> <option value="Telangana">Telangana</option> <option value="Tripura">Tripura</option> <option value="Uttar Pradesh">Uttar Pradesh</option> <option value="Uttarakhand">Uttarakhand</option> <option value="West Bengal">West Bengal</option> </select> 
+      </div> 
+      <div class="inputBox"> <label for="city"> City: </label> <select id="city" required> <option value="">Select city</option> </select> 
+      </div> 
+      <div class="inputBox"> <label for="zip"> Zip Code: </label> 
+       <input type="number" id="zip" placeholder="123 456" required> 
+      </div> 
+     </div> 
+     <div class="col"> 
+      <h3 class="title">Payment</h3> 
+      <div class="inputBox"> <label for="name"> Card Accepted: </label> 
+       <img src="pay.png" alt="credit/debit card image" width="250px" height="300px"> 
+      </div> 
+      <div class="inputBox"> <label for="cardName"> Name On Card: </label> 
+       <input type="text" id="cardName" placeholder="Enter card name" required> 
+      </div> 
+      <div class="inputBox"> <label for="cardNum"> Credit Card Number: </label> 
+       <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19" required> 
+      </div> 
+      <div class="inputBox"> <label for="">Exp Month:</label> <select name="" id="" required> <option value="">Choose month</option> <option value="January">January</option> <option value="February">February</option> <option value="March">March</option> <option value="April">April</option> <option value="May">May</option> <option value="June">June</option> <option value="July">July</option> <option value="August">August</option> <option value="September">September</option> <option value="October">October</option> <option value="November">November</option> <option value="December">December</option> </select> 
+      </div> 
+      <div class="flex"> 
+       <div class="inputBox"> <label for="">Exp Year:</label> <select name="" id="" required> <option value="">Choose Year</option> <option value="2023">2023</option> <option value="2024">2024</option> <option value="2025">2025</option> <option value="2026">2026</option> <option value="2027">2027</option> </select> 
+       </div> 
+       <div class="inputBox"> <label for="cvv">CVV</label> 
+        <input type="number" id="cvv" placeholder="1234" required> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+ <div class="row"> 
+     <div class="col"> 
+      <h3 class="title">Delivery Option</h3> 
+      <div class="inputBox"> 
+       <input type="radio" id="shipping" name="delivery" value="shipping" required> <label for="shipping">Shipping</label> 
+      </div> 
+      <div class="inputBox"> 
+       <input type="radio" id="cod" name="delivery" value="cod" required> <label for="cod">Cash on Delivery</label> 
+      </div> 
+     </div> 
+    </div> 
+    <input type="submit" value="Proceed to Order" class="submit_btn"> 
+   </form>  </div> 
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 25px;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.container form {
+  width: 850px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+.col .title {
+  font-size: 22px;
+  color: #3e2093;
+  padding-bottom: 5px;
+}
+
+.col .inputBox {
+  margin: 15px 0;
+}
+
+.col .inputBox label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.col .inputBox input,
+.col .inputBox select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.col .inputBox input:focus,
+.col .inputBox select:focus {
+  border: 1px solid #000;
+}
+
+.col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.col .flex .inputBox {
+  flex: 1 1;
+  margin-top: 5px;
+}
+
+.col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit_btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: green;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* Additional styles for submit button hover */
+.container form .submit_btn:hover {
+    background: rgb(58, 109, 237);
+  }
+  
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    display: none;
+  }
+  
+  /* Additional styles for delivery options */
+  .col .inputBox input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .col .inputBox label[for="shipping"],
+  .col .inputBox label[for="cod"] {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  /* Adding space at the bottom */
+  .container form {
+    margin-bottom: 70px; /* Adjust as needed */
+  }
+  
